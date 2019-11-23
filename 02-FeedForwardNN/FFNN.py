@@ -21,8 +21,7 @@ plt.scatter(X[:,0], X[:,1], c = Y, s = 100, alpha = 0.5)
 plt.show()
 
 ### NN architecture parameters
-
-D = 2 ### NUmber of features in our Data Set
+D = 2 ### Number of features in our Data Set
 M = 3 ### Hidden layer size
 K = 3 ### Number of classes
 
@@ -53,9 +52,9 @@ def classification_rate(Y,P):
     return float(n_correct)/n_total
 
 #### Calling our FF function with the given parameters and calculate the classification rate:
-
 P_Y_given_X = forward(X, W1, b1, W2, b2)
 pred = np.argmax(P_Y_given_X, axis = 1)
+print(pred)
 
 ### Assert that the length of our pred vector is equal to the Y vector
 assert(len(pred) == len(Y))
