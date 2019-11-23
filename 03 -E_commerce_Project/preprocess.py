@@ -23,7 +23,6 @@ def getData():
     N,D = X.shape
     one_hot = np.zeros([N,D+3])
     one_hot[:, :D-1] = X[:, :D-1]
-    print(one_hot[0,:])
 
     for j in range(N):
         t = int(df['time_of_day'].iloc[j])
