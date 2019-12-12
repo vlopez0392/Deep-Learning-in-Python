@@ -4,6 +4,8 @@ from preprocess import getData
 ### In this file we are going to create a feedforward NN process
 ### to obtain some predictions in our e-commerce data
 
+### We will consider the tanh activation function
+
 ### Getting the data
 X,Y = getData()
 
